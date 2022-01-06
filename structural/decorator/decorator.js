@@ -50,3 +50,14 @@ class Parktronic {
 		return `${this.car.getDescription()} with parktronic`;
 	}
 }
+
+/*How it works*/
+
+const tesla = new Tesla();
+tesla = new Autopilot(tesla);
+tesla = new Parktronic(tesla);
+console.log(tesla.getPrice(), tesla.getDescription());
+
+const tesla2 = new Tesla();
+tesla2 = new Autopilot(tesla);
+console.log(tesla2.getPrice(), tesla2.getDescription())
