@@ -15,3 +15,10 @@ class BmwFactory {
 			return new Bmw(type, 111000, 320);
 	}
 }
+
+
+/*How it works*/
+const factory = new BmwFactory();
+
+const x5 = factory.create('X5');
+const x6 = factory.create('X6');
