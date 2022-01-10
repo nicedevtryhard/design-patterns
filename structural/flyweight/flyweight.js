@@ -15,4 +15,14 @@ class AutoFactory {
 		this.models[name] = new Auto(name);
 		return this.models[name];
 	}
+	getModels() {
+		console.table(this.models)
+	}
 };
+
+const factory = new Autofactory();
+const bmw = factory.create('BMW');
+const audi = factory.create('Audi');
+const tesla = factory.create('Tesla');
+const blackTesla = factory.create('Tesla');
+console.log(factory.getModels());
